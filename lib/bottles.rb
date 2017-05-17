@@ -33,10 +33,9 @@ VERSE
   def instruction(n)
     if n == 0
       "Go to the store and buy some more"
-    elsif n == 1
-      "Take it down and pass it around"
     else
-      "Take one down and pass it around"
+      pronoun = n == 1 ? 'it' : 'one'
+      "Take #{pronoun} down and pass it around"
     end
   end
 end
